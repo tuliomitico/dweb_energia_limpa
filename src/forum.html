@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="../img/logo.png" alt="Logo energia limpa" width="largura" height="altura" class="img-fluid logo-navbar">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="./forum.html">Forum</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Container principal -->
+<div class="container my-4">
+  <div class="row g-4"> <!-- g-4 adiciona espaçamento entre colunas -->
+
+     <!-- Sidebar -->
+      <aside class="col-md-3 col-lg-2 bg-light p-3 border-end">
+        <h5 class="mb-3">Nova Postagem</h5>
+        <form id="formPostagem">
+          <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" class="form-control" id="titulo" required>
+          </div>
+          <div class="mb-3">
+            <label for="conteudo" class="form-label">Conteúdo</label>
+            <textarea class="form-control" id="conteudo" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Publicar</button>
+        </form>
+      </aside>
+
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="content-card card-1 p-3 border rounded shadow-sm">
+        <h5>Faça sua postagem</h5>
+        <p class="card-text">
+          Esse espaço é dedicado para você compartilhar suas ideias, dúvidas e experiências sobre energia limpa. Participe da conversa e ajude a construir uma comunidade engajada e informada!
+        </p>
+        <button class="btn btn-sm btn-outline-primary ver-mais mb-3">Ver mais</button>
+
+        <!-- Área de comentários -->
+        <div class="comentarios">
+          <h6>Comentários</h6>
+          <ul class="list-group mb-2">
+            <li class="list-group-item">Aqui está um comentário.</li>
+            <li class="list-group-item">Troque ideias e opiniões</li>
+          </ul>
+          <form class="d-flex">
+            <input type="text" class="form-control me-2" placeholder="Escreva um comentário...">
+            <button type="button" class="btn btn-sm btn-success">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="content-card card-1 p-3 border rounded shadow-sm">
+        <h5>Título 2</h5>
+        <p class="card-text">
+          Suas postagens aparecerão aqui. Compartilhe suas ideias e participe da discussão sobre energia limpa!
+        </p>
+        <button class="btn btn-sm btn-outline-primary ver-mais mb-3">Ver mais</button>
+        <div class="comentarios">
+          <h6>Comentários</h6>
+          <ul class="list-group mb-2">
+            <li class="list-group-item">Aqui está um comentário.</li>
+          </ul>
+          <form class="d-flex">
+            <input type="text" class="form-control me-2" placeholder="Escreva um comentário...">
+            <button type="button" class="btn btn-sm btn-success">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards adicionais aqui -->
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="fixed-bottom">
+  <p class="mb-1">&copy; 2025 - Todos os direitos reservados.</p>
+  <a href="./sobre.html" class="text-decoration-none text-success">Sobre</a>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

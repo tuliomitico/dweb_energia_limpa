@@ -1,0 +1,77 @@
+body {
+      background-color: #F5F5F5;
+      color: #333;
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #00E676;
+    }
+    .navbar a {
+      color: white !important;
+      font-weight: 500;
+    }
+    /* Sidebar */
+    .sidebar {
+      background-color: #00B0FF;
+      color: white;
+      padding: 20px;
+      min-height: 100%;
+    }
+    /* Cards */
+    .content-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+    }
+    .content-card:hover {
+      transform: translateY(-5px);
+    }
+    /* Definindo cores variadas nos cards */
+    .card-1 { border-top: 6px solid #00E676; }
+    .card-2 { border-top: 6px solid #4FFFE5; }
+    .card-3 { border-top: 6px solid #76FF03; }
+    .card-4 { border-top: 6px solid #00B0FF; }
+    .card-5 { border-top: 6px solid #64FFDA; }
+    .card-6 { border-top: 6px solid #00E676; }
+    .card-7 { border-top: 6px solid #4FFFE5; }
+    .card-8 { border-top: 6px solid #76FF03; }
+    .card-9 { border-top: 6px solid #00B0FF; }
+    /* Footer */
+    footer {
+      background-color: #64FFDA;
+      color: #333;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    /* Ajuste do texto dentro dos cards */
+.card-text {
+  max-height: 120px;   /* altura fixa para todos */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 0.3s ease;
+}
+
+/* Quando expandido */
+.card-text.expanded {
+  max-height: 1000px; /* libera espaço quando clicar */
+}
+
+body {
+  padding-bottom: 80px; /* altura aproximada do footer */
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+} 
+.logo-navbar {
+    max-height: 70px; 
+  }
